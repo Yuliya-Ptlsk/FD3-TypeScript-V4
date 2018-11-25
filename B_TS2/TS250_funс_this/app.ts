@@ -17,7 +17,7 @@ car1.show("INFO #1:");
 type Car={
     num:string,
     model:string,
-    show:(string)=>void
+    show:(s:string)=>void
 };
 
 let car2:Car={

@@ -25,11 +25,11 @@ const myAlert2 = (txt:string) => {
 // и самого идентификатора (имени) функции
 // классические функции
 
-const kvadrat3:(number)=>number = function(v:number):number {
+const kvadrat3:(v:number)=>number = function(v:number):number {
     return v*v;
 }
 
-const myAlert3:(txt)=>void = function(txt:string):void {
+const myAlert3:(txt:string)=>void = function(txt:string):void {
     alert(txt);
 }
 
@@ -37,10 +37,10 @@ const myAlert3:(txt)=>void = function(txt:string):void {
 // и самого идентификатора (имени) функции
 // стрелочные функции
 
-const kvadrat4:(number)=>number = (v:number):number => {
+const kvadrat4:(v:number)=>number = (v:number):number => {
     return v*v;
 }
 
-const myAlert4:(txt)=>void = (txt:string) => {
+const myAlert4:(txt:string)=>void = (txt:string) => {
     alert(txt);
 }

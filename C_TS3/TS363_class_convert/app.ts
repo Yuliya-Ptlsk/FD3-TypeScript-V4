@@ -3,7 +3,7 @@ class Car {
 
     num:number;
 
-    constructor(_num) {
+    constructor(_num:number) {
         this.num=_num;
     }
 
@@ -18,7 +18,7 @@ class House {
     num:number;
     flats:number;
 
-    constructor(_num,_flats) {
+    constructor(_num:number,_flats:number) {
         this.num=_num;
         this.flats=_flats;
     }
@@ -34,7 +34,7 @@ class House {
 // а также "лишнее" свойство flats
 // мы можем присвоить его объекту класса Car, 
 // преобразование типа не требуется
-let car1:Car=new House("21",9*4);
+let car1:Car=new House(21,9*4);
 car1.show(); // вызовется show класса House
 console.log('car1 это Car?', car1 instanceof Car);
 console.log('car1 это House?', car1 instanceof House);
