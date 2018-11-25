@@ -42,3 +42,15 @@ let car1:Car=new Car("2870-ОГО");
 car1.show();
 
 // let transp1:Transp=new Transp; // ошибка
+
+function trainer(tr:Transp):void {
+    for ( let testnum:number=0; testnum<1000; testnum++ ) {
+        tr.start(100);
+        tr.stop();
+    }
+    console.log('training finished');
+}
+
+// функция trainer ожидает объект класса Transp, но таких объектов не бывает
+// мы можем ей передать объект любого неабстрактного класса-потомка Transp
+trainer(car1);
